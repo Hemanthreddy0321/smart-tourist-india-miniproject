@@ -10,89 +10,99 @@ By integrating dynamic Google Maps support and interactive UI components, TOURIS
 
 ## Features
 
-Smart Tourist Search – Find tourist destinations across Indian states and cities with ease.
+ - Smart Tourist Search – Find tourist destinations across Indian states and cities with ease.
 
-Interest-Based Filtering – Filter places by categories such as Heritage, Nature, Adventure, Spiritual, Beach, and Wildlife.
+ - Interest-Based Filtering – Filter places by categories such as Heritage, Nature, Adventure, Spiritual, Beach, and Wildlife.
 
-Interactive Map Integration – View each location instantly on an embedded Google Map inside a modern slide-up panel.
+ - Interactive Map Integration – View each location instantly on an embedded Google Map inside a modern slide-up panel.
 
-Nearby Services Finder – Quickly locate nearby hotels, restaurants, ATMs, petrol pumps, hospitals, and shopping malls.
+ - Nearby Services Finder – Quickly locate nearby hotels, restaurants, ATMs, petrol pumps, hospitals, and shopping malls.
 
-GPS-Based User Location – Mark the traveler’s current location directly on the map using device GPS.
+ - GPS-Based User Location – Mark the traveler’s current location directly on the map using device GPS.
 
-Directions Support – Open turn-by-turn navigation from the user's current location to the destination.
+ - Directions Support – Open turn-by-turn navigation from the user's current location to the destination.
 
-Responsive UI – A clean, mobile-friendly interface optimized for smooth travel planning.
+ - Responsive UI – A clean, mobile-friendly interface optimized for smooth travel planning.
 
-Fast Search Performance – State → City auto-fill, tag filtering, and paginated results for efficient browsing.
+ - Fast Search Performance – State → City auto-fill, tag filtering, and paginated results for efficient browsing.
 
-Requirements
-Operating System
+## Requirements
 
-TOURISTA is a web-based application and can run on any modern 64-bit operating system, including:
+🔹 Operating System
 
-Windows 10 / 11
+TOURISTA is a web-based application and runs smoothly on any modern 64-bit OS, including:
 
-Ubuntu Linux
+ - Windows 10 / Windows 11
 
-macOS Ventura or later
+ - Ubuntu Linux (Latest LTS recommended)
 
-Development Environment
+ - macOS Ventura or later
 
-The project is developed using HTML, CSS, and JavaScript, so no heavy runtime environment is required.
-A modern code editor such as VS Code is recommended for efficient development, debugging, and file organization.
+🔹 Development Environment
 
-Mapping & Geolocation APIs
+The project uses HTML, CSS, and JavaScript, requiring no heavy frameworks.
 
-TOURISTA relies on:
+Recommended tools:
 
-Google Maps Embed API for map rendering
+ - Visual Studio Code
 
-Google Maps Search & Directions API (via URLs)
+ - Live Server (VS Code Extension)
 
-Browser Geolocation API for detecting the user's current location
+🔹 Mapping & Geolocation APIs
 
-These ensure accurate mapping, navigation, and nearby-place detection.
+TOURISTA integrates powerful mapping technologies:
 
-Frontend Libraries (Optional Enhancements)
+  - Google Maps Embed API
 
-Although the project can run without frameworks, developers may optionally integrate:
+ - Google Maps Search & Directions API
 
-Bootstrap or Tailwind CSS for UI styling
+  -Browser Geolocation API
 
-Inter font for consistent typography
+🔹 Frontend Libraries (Optional)
 
-Custom SVG generators for card illustrations
+Enhance UI styling with:
 
-Version Control
+Bootstrap or Tailwind CSS
 
-Git is required for managing versions and pushing updates to GitHub.
+Inter Font
 
-GitHub is used as the primary hosting and collaboration platform.
+Custom SVG Icons/Illustrations
 
-Browser Requirements
+🔹 Version Control
 
-The latest versions of Chrome, Edge, Firefox, or Safari
+Git for version tracking
 
-JavaScript must be enabled
+GitHub for hosting & collaboration
 
-Location permissions must be granted for GPS-based features
+🔹 Browser Requirements
 
-Additional Dependencies
+TOURISTA works best on:
 
-For full functionality, ensure:
+  - Chrome, Edge, Firefox, Safari
 
-Stable internet connection for loading maps and map-based services
+  - JavaScript enabled
 
-Proper file structure:
+  -Location permission allowed
 
-index.html
+🔹 Additional Dependencies
 
-css/styles.css
+Ensure the following:
 
-js/script.js
+Stable internet connection
 
-js/data_places.js
+
+
+
+
+ Proper file structure:
+
+  - index.html
+
+ - css/styles.css
+
+ - js/script.js
+
+ - js/data_places.js
 
 
 ## System Architecture
