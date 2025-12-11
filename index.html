@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Tourist — India</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Smart Tourist — India</h1>
+    </div>
+  </header>
+
+  <!-- SEARCH PANEL -->
+  <section class="container plan-section">
+    <form class="plan-form" onsubmit="event.preventDefault(); applySearch();">
+
+      <div class="form-group">
+        <label>Select State</label>
+        <select id="stateInput" class="input"></select>
+      </div>
+
+      <div class="form-group">
+        <label>Select City</label>
+        <select id="cityInput" class="input"></select>
+      </div>
+
+      <div class="form-group">
+        <label>Filter by Interest</label>
+        <div class="chips">
+          <div class="chip" data-tag="heritage">Heritage</div>
+          <div class="chip" data-tag="nature">Nature</div>
+          <div class="chip" data-tag="adventure">Adventure</div>
+          <div class="chip" data-tag="spiritual">Spiritual</div>
+          <div class="chip" data-tag="beach">Beach</div>
+          <div class="chip" data-tag="wildlife">Wildlife</div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">Search</button>
+        <button class="btn" type="reset" onclick="resetSearch()">Reset</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="container results">
+    <h2>Results</h2>
+    <div class="cards-grid" id="resultsContainer"></div>
+    <div class="pagination">
+      <button id="prevPage" class="btn">Prev</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage" class="btn">Next</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Smart Tourist — India</p>
+    </div>
+  </footer>
+
+  <!-- ===============================
+        MAP PANEL (FINAL VERSION)
+  =============================== -->
+  <div id="mapPanel" class="map-panel">
+
+    <div class="nearby-buttons">
+      <button onclick="openNearby('hotel')">🏨 Hotels</button>
+      <button onclick="openNearby('restaurant')">🍽 Restaurants</button>
+      <button onclick="openNearby('atm')">🏧 ATMs</button>
+      <button onclick="openNearby('petrol pump')">⛽ Petrol</button>
+      <button onclick="openNearby('shopping mall')">🛍 Shopping</button>
+      <button onclick="openNearby('hospital')">🚑 Hospitals</button>
+    </div>
+
+    <div class="drag-handle"></div>
+
+    <div class="map-header">
+      <span id="mapTitle">Place Name</span>
+
+      <div class="map-actions">
+        <button onclick="openFullMap()" class="icon-btn">⤢</button>
+        <button onclick="openDirections()" class="icon-btn">🧭</button>
+        <button onclick="closeMap()" class="icon-btn close-btn">✖</button>
+      </div>
+    </div>
+
+    <iframe id="mapFrame" height="320" style="border:0"></iframe>
+
+    <button class="gps-btn" onclick="locateUser()">🎯 Locate Me</button>
+
+  </div>
+
+  <script src="js/data_places.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
